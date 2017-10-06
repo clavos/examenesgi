@@ -21,11 +21,10 @@ db:
     DB_ADMIN_PASS: pass
   ports:
     - "3000:3306"
-  restart: always
 
 phpmyadmin:
   image: phpmyadmin/phpmyadmin
-  container_name: admin1
+  container_name: admin
   links: 
     - db
   ports: 
